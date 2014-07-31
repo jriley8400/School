@@ -9,6 +9,8 @@ class CourseStudentsController < ApplicationController
   end
 
   def new
+    @courses = Course.all
+    @students = Student.all
   end
 
   def create
